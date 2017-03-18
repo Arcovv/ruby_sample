@@ -25,3 +25,18 @@ def obj.default_args(a,b,c=2)
 end
 
 obj.default_args(1, 2)
+
+def obj.mixed_args(a,b,*c,d)
+	puts "Arguments:"
+	p a, b, c, d
+end
+
+obj.mixed_args(1,2,3,4,5)
+obj.mixed_args(1,2,3)
+
+def obj.unleashed(a,b=1,*c,d,e)
+	puts "Arguments:"
+	p a, b, c, d, e
+end
+
+obj.unleashed(1,3,5)

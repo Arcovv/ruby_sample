@@ -9,38 +9,38 @@ def ticket.venue
 end
 
 def ticket.event
-	"Author's reading"
+  "Author's reading"
 end
 
 def ticket.performer
-	"Mark Twain"
+  "Mark Twain"
 end
 
 def ticket.seat
-	"Second Balcony, row J, seat 12"
+  "Second Balcony, row J, seat 12"
 end
 
 def ticket.price
-	5.50
+  5.50
 end
 
 puts "This ticket is for: #{ticket.event}, " + ", at #{ticket.venue}." +
-	"The performer is #{ticket.performer}." +
-	"The seat is #{ticket.seat}, " +
-	"and it costs $#{"%.2f." % ticket.price}"
+  "The performer is #{ticket.performer}." +
+  "The seat is #{ticket.seat}, " +
+  "and it costs $#{"%.2f." % ticket.price}"
 
 def ticket.availability_status
-	"sold"
+  "sold"
 end
 
 def ticket.available?
-	false
+  false
 end
 
 if ticket.available?
-	puts "You're in luck!"
+  puts "You're in luck!"
 else
-	puts "Sorry--that seat has been sold."
+  puts "Sorry--that seat has been sold."
 end
 
 print "Information desired: "
@@ -53,7 +53,7 @@ request = gets.chomp
 # end
 
 if ticket.respond_to?(request)
-	puts ticket.public_send(request) # can use 'send' or '__send__' or 'public_send'
+  puts ticket.public_send(request) # can use 'send' or '__send__' or 'public_send'
 else
-	puts "No such information available."
+  puts "No such information available."
 end
