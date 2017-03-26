@@ -55,3 +55,10 @@
 ### 樂為人師，融會貫通
 目前仍以自己教自己，自己給自己出題和思考為主。
 
+---
+
+附註：
+
+[ruby-repo 地址](https://github.com/Arcovv/ruby_sample)
+
+[《答卓同學 Swift 面試題》](http://www.jianshu.com/p/fa4a8659d036)
