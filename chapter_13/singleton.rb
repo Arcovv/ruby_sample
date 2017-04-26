@@ -10,6 +10,8 @@ end
 c = C.new
 c.talk # Hi!
 
+# 13.1.2
+
 # Instance of Object
 obj = Object.new
 def obj.talk
@@ -46,3 +48,12 @@ class << str
   end
 end
 puts str.twice
+
+# define class methods
+class Ticket
+  class << self
+    def most_expensive(*tickets)
+      tickets.max_by(&:price)
+    end
+  end
+end
